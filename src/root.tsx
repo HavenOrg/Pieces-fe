@@ -11,11 +11,9 @@ import {
   Scripts,
   ErrorBoundary,
 } from "solid-start";
-import "./root.css"
-
+import "./root.css";
 
 export default function Root() {
-
   return (
     <Html>
       <Head>
@@ -24,6 +22,10 @@ export default function Root() {
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta name="description" content="Find your gem" />
         <Link rel="manifest" href="/manifest.webmanifest" />
+        <Link
+          href="https://fonts.googleapis.com/css?family=Abril+Fatface"
+          rel="stylesheet"
+        />
       </Head>
       <Body>
         <Suspense>
@@ -39,5 +41,4 @@ export default function Root() {
       </Body>
     </Html>
   );
-};
-
+}

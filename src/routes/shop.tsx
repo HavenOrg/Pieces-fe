@@ -1,5 +1,5 @@
 import { For, lazy } from "solid-js";
-import FeatureProducts from "./FeaturedProducts";
+import FeatureProducts from "../components/FeaturedProducts";
 import A from "solid-start";
 
 // Update for ssr

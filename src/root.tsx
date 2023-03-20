@@ -11,10 +11,15 @@ import {
   FileRoutes,
   Scripts,
   ErrorBoundary,
+  Route
 } from "solid-start";
+import Navbar from "./components/Navbar";
 import "./root.css";
 
+import NotFound from "./routes/[...404]"; 
+
 export default function Root() {
+  
   return (
     <Html>
       <Head>
@@ -28,13 +33,16 @@ export default function Root() {
           rel="stylesheet"
         />
       </Head>
-      <Body>
+      <Body class="overflow-y-hidden">
         <Suspense>
           <ErrorBoundary>
             {/* Place NAVVBARR */}
+            
+            <Navbar />
             <Router>
               <Routes>
                 <FileRoutes />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </Router>
           </ErrorBoundary>

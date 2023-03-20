@@ -4,25 +4,14 @@ Everything you need to build a Solid project, powered by [`solid-start`](https:/
 
 ## Table of Contents
 
-- [Creating a Project](#StartProject)
 - [Developing](#Develop)
 - [Building](#Building)
 - [Support](#Support)
 
 
-## Creating a project
-
-```bash
-# create a new project in the current directory
-npm init solid@latest
-
-# create a new project in my-app
-npm init solid@latest my-app
-```
-
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've created a project and installed dependencies with `npm install`, start a development server:
 
 ```bash
 npm run dev

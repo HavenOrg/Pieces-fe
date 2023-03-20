@@ -1,3 +1,4 @@
+import { Router } from "@solidjs/router";
 import { Suspense, lazy } from "solid-js";
 import {
   Html,
@@ -31,9 +32,11 @@ export default function Root() {
         <Suspense>
           <ErrorBoundary>
             {/* Place NAVVBARR */}
-            <Routes>
-              <FileRoutes />
-            </Routes>
+            <Router>
+              <Routes>
+                <FileRoutes />
+              </Routes>
+            </Router>
           </ErrorBoundary>
         </Suspense>
         {/* This one line "scripts" voided my styling when deleted*/}

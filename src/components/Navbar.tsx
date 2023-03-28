@@ -45,7 +45,6 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Sidebar */}
         <div class={`${sidebarOpen() ? "block" : "hidden"} absolute top-0 bottom-0 left-0 z-10`}>
           <Sidebar onClose={toggleSideBar} />
         </div>
@@ -62,7 +61,7 @@ const Navbar = () => {
                 <li class="uppercase">
                   <A
                     class="text-sm font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-                    href={`/${category.toLowerCase()}`}
+                    href={`/shop/${category.toLowerCase()}`}
                     style={{ "font-family": "Abril-Fatface" }}
                   >
                     {category}

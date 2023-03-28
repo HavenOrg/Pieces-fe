@@ -41,7 +41,7 @@ const Sidebar = ({ onClose }: { onClose: () => void }) => {
               <li>
                 <A
                   class="block text-gray-300 hover:text-white"
-                  href={`/${category.toLowerCase()}`}
+                  href={`/shop/${category.toLowerCase()}`}
                   style={{ "font-family": "Abril-Fatface" }}
                 >
                   {category}

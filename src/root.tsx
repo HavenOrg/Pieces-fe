@@ -15,11 +15,13 @@ import {
 } from "solid-start";
 import Navbar from "./components/Navbar";
 import "./root.css";
+import ShopCategory from "./routes/shop/[category]";
+
 
 import NotFound from "./routes/[...404]"; 
 
 export default function Root() {
-  
+
   return (
     <Html>
       <Head>
@@ -35,14 +37,14 @@ export default function Root() {
       </Head>
       <Body class="overflow-y-hidden">
         <Suspense>
-          <ErrorBoundary>
-            {/* Place NAVVBARR */}
-            
+          <ErrorBoundary>            
             <Navbar />
             <Router>
               <Routes>
-                <FileRoutes />
                 <Route path="*" element={<NotFound />} />
+                <Route path="/shop/:category" element={<ShopCategory />} />
+                <FileRoutes />
+
               </Routes>
             </Router>
           </ErrorBoundary>

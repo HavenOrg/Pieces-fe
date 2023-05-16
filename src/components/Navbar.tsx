@@ -2,8 +2,10 @@ import { A } from "solid-start";
 import { For, createSignal } from "solid-js";
 import Sidebar from "./Sidebar";
 
+
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = createSignal(false);
+
 
   const categories = [
     "New",

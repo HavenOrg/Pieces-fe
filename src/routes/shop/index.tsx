@@ -1,4 +1,4 @@
-import { For, lazy } from "solid-js";
+import { For } from "solid-js";
 import FeatureProducts from "../../components/FeaturedProducts";
 import A from "solid-start";
 

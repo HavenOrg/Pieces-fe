@@ -1,5 +1,4 @@
-import { Router } from "@solidjs/router";
-import { Suspense, lazy } from "solid-js";
+import { Suspense } from "solid-js";
 import {
   Html,
   Head,
@@ -15,10 +14,7 @@ import {
 } from "solid-start";
 import Navbar from "./components/Navbar";
 import "./root.css";
-import ShopCategory from "./routes/shop/[category]";
-
-
-import NotFound from "./routes/[...404]"; 
+// import NotFound from "./routes/[...404]"; 
 
 export default function Root() {
 
@@ -39,14 +35,11 @@ export default function Root() {
         <Suspense>
           <ErrorBoundary>            
             <Navbar />
-            <Router>
               <Routes>
-                <Route path="*" element={<NotFound />} />
-                <Route path="/shop/:category" element={<ShopCategory />} />
+                {/* <Route path="*" element={<NotFound />} /> */}
                 <FileRoutes />
 
               </Routes>
-            </Router>
           </ErrorBoundary>
         </Suspense>
         {/* This one line "scripts" voided my styling when deleted*/}

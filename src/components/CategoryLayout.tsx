@@ -10,6 +10,7 @@ const CategoryLayout: Component<Props> = (props) => {
   return (
     <div class="flex flex-col justify-center items-center w-screen h-screen bg-orange-100 block">
       <h1>Category: {props.category}</h1>
+      HI-HI-HI-HI-HI
       {props.children}
     </div>
   );
